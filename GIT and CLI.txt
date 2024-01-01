@@ -1,0 +1,10 @@
+1.What is Git and why is it used?
+
+What is Git: Features, Commands, Branch and Workflow in Git
+Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
+
+
+
+2.How to merge git branches from command line?
+
+To merge branches locally, use git checkout to switch to the branch you want to merge into. This branch is typically the main branch. Next, use git merge and specify the name of the other branch to bring into this branch.
