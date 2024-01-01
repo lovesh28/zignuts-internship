@@ -94,3 +94,56 @@ HTML tables allow web developers to arrange data into rows and columns.
     <td>Mexico</td>
   </tr>
 </table>
+
+
+
+
+
+
+
+*HTML FORMS:
+
+The <form> Element
+The HTML <form> element is used to create an HTML form for user input:
+
+<form>
+.
+form elements
+.
+</form>
+
+1.The <input> Element:
+
+The HTML <input> element is the most used form element.
+
+An <input> element can be displayed in many ways, depending on the type attribute.
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button
+
+
+2.Checkboxes:
+The <input type="checkbox"> defines a checkbox.
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+Example:
+
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+
+3. Submit Button:
+The <input type="submit"> defines a button for submitting the form data to a form-handler.
+
+The form-handler is typically a file on the server with a script for processing input data.
+
+<input type="submit" value="Submit">
+
