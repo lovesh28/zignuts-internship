@@ -87,3 +87,60 @@ The code to be executed, by the function, is placed inside curly brackets: {}
 function name(parameter1, parameter2, parameter3) {
   // code to be executed
 }
+
+
+
+9.JavaScript Arrays:
+An array is a special variable, which can hold more than one value:
+
+const cars = ["Saab", "Volvo", "BMW"];
+
+*Creating an Array
+Using an array literal is the easiest way to create a JavaScript Array.
+
+Syntax:
+
+const array_name = [item1, item2, ...];
+
+*Accessing Array Elements:
+You access an array element by referring to the index number:
+
+const cars = ["Saab", "Volvo", "BMW"];
+let car = cars[0];
+
+*The if else Statement
+Use the else statement to specify a block of code to be executed if the condition is false.
+
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+
+Example:
+
+If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":
+
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+
+
+10.JavaScript Hoisting:
+Hoisting is JavaScript's default behavior of moving declarations to the top.Declare Your Variables At the Top !
+Hoisting is (to many developers) an unknown or overlooked behavior of JavaScript.
+If a developer doesn't understand hoisting, programs may contain bugs (errors).
+To avoid bugs, always declare all variables at the beginning of every scope.
+Since this is how JavaScript interprets the code, it is always a good rule.
+JavaScript Declarations are Hoisted.
+
+Example:
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x;                     // Display x in the element
+
+var x;
