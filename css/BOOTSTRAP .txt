@@ -1,13 +1,42 @@
-1. BOOTSTRAP 5 :
+1. What is Bootstrap?
 
-Bootstrap 5 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, mobile-first websites.
+Bootstrap is a free front-end framework for faster and easier web development
+Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+Bootstrap also gives you the ability to easily create responsive designs
+
+2. Why Use Bootstrap?
+
+Advantages of Bootstrap:
+
+1)Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+2)Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+3)Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework
+4)Browser compatibility: Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox, Edge, Safari, and Opera). Note that if you need support for IE11 and down, you must use either BS4 or BS3.
 
 
 
-2. Bootstrap 5 vs. Bootstrap 3 & 4:
+3. Bootstrap 5 vs. Bootstrap 3 & 4:
 
 Bootstrap 5 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.
 
 Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.
 
 The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to JavaScript instead of jQuery.
+
+
+4. Bootstrap 5 CDN
+If you don't want to download and host Bootstrap 5 yourself, you can include it from a CDN (Content Delivery Network).
+
+jsDelivr provides CDN support for Bootstrap's CSS and JavaScript:
+
+MaxCDN:
+
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
