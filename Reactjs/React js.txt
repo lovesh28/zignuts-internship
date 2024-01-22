@@ -1,1 +1,212 @@
-this is react js
+REACT JS :
+
+What is React?
+React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook.
+
+React is a JavaScript library for building user interfaces.
+
+React is used to build single-page applications.
+
+React allows us to create reusable UI components.
+
+
+*How does React Work?
+React creates a VIRTUAL DOM in memory.
+
+Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.
+
+React only changes what needs to be changed!
+
+React finds out what changes have been made, and changes only what needs to be changed.
+
+
+*Setting up a React Environment:
+
+If you have npx and Node.js installed, you can create a React application by using "create-react-app."
+-npx create-react-app my-react-app
+
+
+
+*basic example syntax:
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Hello(props) {
+  return <h1>Hello World!</h1>;
+}
+
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container);
+root.render(<Hello />);
+
+
+
+*What is ES6?
+ES6 stands for ECMAScript 6.
+
+ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, it was published in 2015, and is also known as ECMAScript 2015.
+React uses ES6, and you should be familiar with some of the new features like:
+
+Classes
+Arrow Functions
+Variables (let, const, var)
+Array Methods like .map()
+Destructuring
+Modules
+Ternary Operator
+Spread Operator
+
+
+*React ES6 Arrow Functions:
+Arrow Functions
+Arrow functions allow us to write shorter function syntax:
+
+Example:
+Before:
+
+hello = function() {
+  return "Hello World!";
+}
+
+With Arrow Function:
+
+hello = () => {
+  return "Hello World!";
+}
+
+*React ES6 Variables:
+with ES6, there are three ways of defining your variables: var, let, and const.
+
+
+*React Components:
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+
+1.Class components :
+A class component must include the extends React.Component statement. This statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
+
+The component also requires a render() method, this method returns HTML.
+
+Example
+Create a Class component called Car
+
+class Car extends React.Component {
+  render() {
+    return <h2>Hi, I am a Car!</h2>;
+  }
+}
+
+2.Function components:
+Function Component
+Here is the same example as above, but created using a Function component instead.
+
+A Function component also returns HTML, and behaves much the same way as a Class component, but Function components can be written using much less code, are easier to understand, and will be preferred in this tutorial.
+
+Example
+Create a Function component called Car
+
+function Car() {
+  return <h2>Hi, I am a Car!</h2>;
+}
+
+
+*React Hooks:
+
+Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+
+What is a Hook?
+Hooks allow us to "hook" into React features such as state and lifecycle methods.
+
+Example:
+Here is an example of a Hook. Don't worry if it doesn't make sense. We will go into more detail in the next section.
+
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
+
+function FavoriteColor() {
+  const [color, setColor] = useState("red");
+
+  return (
+    <>
+      <h1>My favorite color is {color}!</h1>
+      <button
+        type="button"
+        onClick={() => setColor("blue")}
+      >Blue</button>
+      <button
+        type="button"
+        onClick={() => setColor("red")}
+      >Red</button>
+      <button
+        type="button"
+        onClick={() => setColor("pink")}
+      >Pink</button>
+      <button
+        type="button"
+        onClick={() => setColor("green")}
+      >Green</button>
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<FavoriteColor />);
+
+You must import Hooks from react.
+
+Here we are using the useState Hook to keep track of the application state.
+
+*Hook Rules:
+There are 3 rules for hooks:
+
+Hooks can only be called inside React function components.
+Hooks can only be called at the top level of a component.
+Hooks cannot be conditional
+
+
+*React useState Hook:
+The React useState Hook allows us to track state in a function component.
+
+Import useState
+To use the useState Hook, we first need to import it into our component.
+
+Example:
+At the top of your component, import the useState Hook.
+
+import { useState } from "react";
+
+*React useEffect Hooks
+The useEffect Hook allows you to perform side effects in your components.
+
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+useEffect accepts two arguments. The second argument is optional.
+
+useEffect(<function>, <dependency>)
+
+Let's use a timer as an example.
+
+Example:
+Use setTimeout() to count 1 second after initial render:
+
+import { useState, useEffect } from "react";
+import ReactDOM from "react-dom/client";
+
+function Timer() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 1000);
+  });
+
+  return <h1>I've rendered {count} times!</h1>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Timer />);
+
+
+
+
