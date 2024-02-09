@@ -3,7 +3,10 @@ import React from "react";
 export default function Navbar(props) {
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav
+        class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+        data-bs-theme="dark"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             {props.title}
