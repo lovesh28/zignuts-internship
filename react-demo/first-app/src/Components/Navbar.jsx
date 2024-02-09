@@ -4,15 +4,14 @@ export default function Navbar(props) {
   return (
     <>
       <nav
-        class="navbar navbar-expand-lg bg-dark border-bottom border-body"
-        data-bs-theme="dark"
+        className={`navbar navbar-expand-lg bg-${props.mode} navbar-${props.mode}`}
       >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             {props.title}
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -20,29 +19,49 @@ export default function Navbar(props) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   {props.aboutText}
                 </a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <div
+              className={`form-check form-switch text-${
+                props.mode === "light" ? "dark" : "light  "
+              }`}
+            >
               <input
-                class="form-control me-2"
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+                onClick={props.toggleMode}
+              />
+              <label
+                className="form-check-label    bg-${props.mode} "
+                htmlFor="flexSwitchCheckDefault"
+                
+              >
+                Dark Mode
+              </label>
+            </div>
+            <form className="d-flex " role="search">
+              <input
+                className="form-control me-2 mx-3"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
             </form>
