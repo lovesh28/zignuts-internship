@@ -1,0 +1,18 @@
+1.What is Git and why is it used?
+
+What is Git: Features, Commands, Branch and Workflow in Git
+Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
+
+
+
+2.How to merge git branches from command line?
+
+To merge branches locally, use git checkout to switch to the branch you want to merge into. This branch is typically the main branch. Next, use git merge and specify the name of the other branch to bring into this branch.
+
+If the branch already exists on the remote, the 'git push' command can be used. Merging branches involves ensuring the working tree is clean, checking out the branch to merge into another and then running the 'git merge my-branch-name' command.
+
+
+3. How to merge two branches in git vs code?
+Merging Branches
+
+At the top right of the Source Control panel, there is a button with an ellipses (…). If you want to merge two branches together, you can just click this button, go to the 'Pull, Push' option, then select 'Pull from…' and select a branch to merge with
